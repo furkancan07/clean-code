@@ -4,7 +4,8 @@ package org.example.cleancode.errorhandling;
 public enum BusinessValidationRule {
     INVALID_EMAIL("Invalid email format"),
     CONFLICT_EMAIL("Conflict email", 409),
-    RATE_LIMIT_EXCEEDED("Rate limit exceeded", 429);
+    RATE_LIMIT_EXCEEDED("Rate limit exceeded", 429),
+    NOT_FOUND("Not found",404);
 
     private final String message;
     private final Integer status; // springde bunu httpstatus kullan
