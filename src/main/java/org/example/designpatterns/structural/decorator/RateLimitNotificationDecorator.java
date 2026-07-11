@@ -19,6 +19,7 @@ public class RateLimitNotificationDecorator implements NotificationService {
             System.out.println("Rate limit aşıldı - > : " + userId);
         }
         rateLimitMap.put(userId,count+1);
+        System.out.println("Rate limit decorator çalıştı -> : " + userId);
         wrapped.send(userId, message);
     }
 }
