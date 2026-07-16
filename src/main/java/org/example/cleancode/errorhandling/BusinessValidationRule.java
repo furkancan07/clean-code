@@ -27,4 +27,6 @@ public enum BusinessValidationRule {
     public Integer getStatus() {
         return status;
     }
+
+
 }
