@@ -7,6 +7,7 @@ public class User {
         return name;
     }
 
+
     public Address getAddress() {
         return address;
     }

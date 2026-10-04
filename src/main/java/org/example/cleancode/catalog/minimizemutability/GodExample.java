@@ -1,5 +1,5 @@
 package org.example.cleancode.catalog.minimizemutability;
-/*
+/**
 * effective java da item 17 deye denk geliyor bu konu baba konu basit diyor ki
 * Mutable bir sınıf demek: nesne yaratıldıktan sonra state'i değişebilir demek
 * Bu özellikle çok thread'li ortamlarda ve büyük kod tabanlarında ciddi risk taşır
@@ -17,7 +17,6 @@ package org.example.cleancode.catalog.minimizemutability;
 * Bu yüzden Java'da StringBuilder (mutable) yanında String (immutable) ikisi bir arada var
 *  Yani immutability her zaman en iyisi değil
 * varsayılan tercih olmalı ama performans-kritik mutasyon senaryolarında bilinçli olarak mutable bir yapı seçilebilir.
- *
 * */
 public class GodExample {
     public  final class Money { // 2) final — extend edilemez

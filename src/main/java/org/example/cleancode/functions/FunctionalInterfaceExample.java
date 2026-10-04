@@ -50,7 +50,7 @@ import java.util.function.*;
  */
 
 public class FunctionalInterfaceExample {
-    /*
+    /**
     * java 8 ile geldi 4 başlıkta
     * 1-) consumer : bir şey döndürmez paramtre alır ve işlem yapar
     * tri consumea kadar java destekler daha fazla parametre için

@@ -21,5 +21,4 @@ public class OrderStatus {
             default -> throw new IllegalArgumentException("Bilinmeyen durum: " + code);
         };
     }
-
 }
