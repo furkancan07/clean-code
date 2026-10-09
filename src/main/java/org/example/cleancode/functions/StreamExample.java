@@ -1,9 +1,7 @@
 package org.example.cleancode.functions;
 
-import java.lang.invoke.VarHandle;
-import java.util.*;
-import java.util.function.*;
-import java.util.stream.Collectors;
+import java.util.Comparator;
+import java.util.List;
 
 
 /**
@@ -144,8 +142,6 @@ public class StreamExample {
                 .flatMap(List::stream)
                 .toList();
         System.out.println("flatMap: " + duzListe);
-
-
 
     }
 
