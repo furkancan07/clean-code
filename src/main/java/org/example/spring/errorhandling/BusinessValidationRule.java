@@ -1,30 +1,33 @@
-package org.example.cleancode.errorhandling;
+package org.example.spring.errorhandling;
+
+import org.springframework.http.HttpStatus;
+
 // burada kurduğumuz yapı ile tüm hataları global exception handler de yönetebiliriz
 // şu an spring paketleri yüklü olmadığı için orası klasın orada best practise problemdetails sınıfını kullanmaktır
 public enum BusinessValidationRule {
     INVALID_EMAIL("Invalid email format"),
-    CONFLICT_EMAIL("Conflict email", 409),
-    RATE_LIMIT_EXCEEDED("Rate limit exceeded", 429),
-    NOT_FOUND("Not found",404);
+    CONFLICT_EMAIL("Conflict email", HttpStatus.CONFLICT),
+    RATE_LIMIT_EXCEEDED("Rate limit exceeded", HttpStatus.TOO_MANY_REQUESTS),
+    NOT_FOUND("Not found",HttpStatus.NOT_FOUND);
 
     private final String message;
-    private final Integer status; // springde bunu httpstatus kullan
+    private final HttpStatus status; // springde bunu httpstatus kullan
 
-    BusinessValidationRule(String message, Integer status) {
+    BusinessValidationRule(String message, HttpStatus status) {
         this.message = message;
         this.status = status;
     }
 
     BusinessValidationRule(String message) {
         this.message = message;
-        this.status=400;
+        this.status=HttpStatus.BAD_REQUEST;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public Integer getStatus() {
+    public HttpStatus getStatus() {
         return status;
     }
 

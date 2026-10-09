@@ -1,7 +1,7 @@
 package org.example.cleancode.nullsafety;
 
-import org.example.cleancode.errorhandling.BusinessValidationException;
-import org.example.cleancode.errorhandling.BusinessValidationRule;
+import org.example.spring.errorhandling.BusinessValidationException;
+import org.example.spring.errorhandling.BusinessValidationRule;
 
 import java.util.Optional;
 

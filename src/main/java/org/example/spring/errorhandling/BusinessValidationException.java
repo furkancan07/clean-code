@@ -1,4 +1,7 @@
-package org.example.cleancode.errorhandling;
+package org.example.spring.errorhandling;
+
+import org.springframework.http.HttpStatus;
+
 // enum bazlı ne hata gelirse oradan yöentebiliriz
 public class BusinessValidationException extends RuntimeException{
     private final BusinessValidationRule rule;
@@ -7,7 +10,7 @@ public class BusinessValidationException extends RuntimeException{
         super(rule.getMessage());
         this.rule = rule;
     }
-    public Integer getStatus() {
+    public HttpStatus getStatus() {
         return rule.getStatus();
     }
 }
