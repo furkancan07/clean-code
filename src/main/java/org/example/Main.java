@@ -31,7 +31,7 @@ public class Main implements CommandLineRunner {
 
     public static void main(String[] args) {
         new SpringApplicationBuilder(Main.class)
-                .web(WebApplicationType.NONE)
+               // .web(WebApplicationType.NONE)
                 .run(args);
     }
 

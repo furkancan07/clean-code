@@ -119,7 +119,6 @@ public class FunctionalInterfaceExample {
         Predicate<Integer> ciftMi=x->x%2==0;
         System.out.println(ciftMi.test(5));
         // çok da örneğe gerek yok anlaşılır
-
         // BUNLARID DIŞINDA PROJEDEKİ SENATYOYA GÖRE KENDİ İNTERFACELERİNİZİ YAZABİLİRSİN
 
 
